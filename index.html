@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+       <section class="container">
+        <label class="t" for="username">Username:</label>
+        <br>
+        <input class="u" type="text" id="username" name="username" required><br>
+        <label class="t" for="password">Password:</label><br>
+        <input class="u" type="password" id="password" name="password" required><br>
+        <input class="button" type="button" value="login" onclick="func()">
+       </section>
+          
+       
+    <script >
+        function func() {
+    var email = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    if (email === 'RitikJena' && pass === 'Mahal') {
+        alert("Happy birthday love😘😘 Click OK to proceed.");
+        window.location.assign("main1.html"); // Redirect to another file in the same folder
+    } else {
+        alert("Try again😅😂");
+    }
+}
+    </script>        
+</body>
+
+</html>
